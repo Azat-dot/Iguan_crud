@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+Tickets list    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>Tickets list </center></h1>
+	<hr>
+			<div class="ticket-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>ID</label>
+                        <input type="number" min="0" step="1" name="code" id="code">
+                    </div>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label>Description</label>
+                        <input type="text" name="descr" id="descr">
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="datetime-local" name="date" id="date">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "ticket-table">
+                <table class="list" id="ticketList">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
